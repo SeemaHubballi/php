@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 15%;
+    height: 400px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    height:20%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+   
+}
+.w3-info {
+    background-color: #ddffdd;
+    border-left: 6px solid #4CAF50;
+}
+
+.intro {
+    font-size: 16px;
+}
+.w3-panel {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.w3-note {
+    background-color: #ffffcc;
+    border-left: 6px solid #ffeb3b;
+}
+
+
+</style>
+</head>
+<body>
+<center>
+<img src="php images\download.png">
+<h3>THE WORLD'S LARGEST WEB DEVELOPER SITE</h3>
+</center>
+<div class="topnav">
+  <a href="html">HTML</a>
+  <a href="#css">CSS</a>
+  <a href="#javascript">JAVASCRIPT</a>
+  <a href="#sql">SQL</a>
+  <a class="active" href="#php">PHP</a>
+  <a href="#bootstrap">BOOTSTRAP</a>
+  <a href="#howto">HOW TO</a>
+  <a href="#jquery">JQUERY</a>
+  <a href="#w3css">W3.CSS</a>
+  <a href="#angular">ANGULAR</a>
+  <a href="#more">MORE</a>
+</div>
+<h1>PHP Tutorial</h1>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">PHP HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'intro')">PHP Intro</button>
+  <button class="tablinks" onclick="openCity(event, 'install')">PHP Install</button>
+<button class="tablinks" onclick="openCity(event, 'syntax')">PHP Syntax</button>
+  <button class="tablinks" onclick="openCity(event, 'var')">PHP Variables</button>
+  <button class="tablinks" onclick="openCity(event, 'echo')">PHP Echo / Print</button>
+  <button class="tablinks" onclick="openCity(event, 'data')">PHP Data Types</button>
+  <button class="tablinks" onclick="openCity(event, 'string')">PHP Strings</button>
+  <button class="tablinks" onclick="openCity(event, 'constant')">PHP Constants</button>
+  <button class="tablinks" onclick="openCity(event, 'operators')">PHP Operators</button>
+  <button class="tablinks" onclick="openCity(event, 'else')">PHP If...Else...Elseif</button>
+  <button class="tablinks" onclick="openCity(event, 'switch')">PHP Switch</button>
+  <button class="tablinks" onclick="openCity(event, 'while')">PHP While Loops</button>
+  <button class="tablinks" onclick="openCity(event, 'for')">PHP For Loops</button>
+  <button class="tablinks" onclick="openCity(event, 'function')">PHP Functions</button>
+  <button class="tablinks" onclick="openCity(event, 'array')">PHP Arrays</button>
+  <button class="tablinks" onclick="openCity(event, 'sort')">PHP Sorting Arrays</button>
+  <button class="tablinks" onclick="openCity(event, 'global')">PHP Superglobals</button>
+</div>
+
+
+
+
+<div id="home" class="tabcontent">
+<h1>PHP 5 Tutorial</h1>
+<div class="w3-panel w3-info intro">
+<p>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</p>
+<p>PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.</p>
+
+</div>
+<hr>
+<h2>Easy Learning with "Show PHP"</h2>
+<p>Our "Show PHP" tool makes it easy to learn PHP, it shows both the 
+PHP source 
+code and the HTML output of the code.</p>
+<hr>
+
+<img src="php images\home.png" width="1000px">
+</div>
+
+
+<div id="intro" class="tabcontent">
+ 
+<h1>PHP 5 <span class="color_h1">Introduction</span></h1>
+
+<hr>
+<p class="intro">PHP scripts are executed on the server.</p>
+<hr>
+
+<h2>What You Should Already Know</h2>
+<p>Before you continue you should have a basic understanding of the following:</p>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+
+<h2>What is PHP?</h2>
+<ul>
+<li>PHP is an acronym for "PHP: Hypertext Preprocessor"</li> 
+<li>PHP is a widely-used, open source scripting language</li>
+<li>PHP scripts are executed on the server</li>
+<li>PHP is free to download and use</li> 
+</ul>
+
+<div class="w3-panel w3-note">
+<p><strong>PHP is an amazing and popular language!</strong></p>
+<p>It is powerful enough to be at the core of the biggest 
+blogging system on the web (WordPress)!<br>It is deep enough to run the largest social network 
+(Facebook)!<br>It is also easy enough to be a beginner's first server side 
+language!</p></div>
+
+<hr>
+
+<h2>What is a PHP File?</h2>
+<ul>
+<li>PHP files can contain text, HTML, CSS, JavaScript, and PHP code</li>
+<li>PHP code are executed on the server, and the result is returned to the browser as plain HTML</li>
+<li>PHP files have extension ".php"</li> 
+</ul>
+<hr>
+
+<h2>What Can PHP Do?</h2>
+<ul>
+  <li>PHP can generate dynamic page content</li>
+  <li>PHP can create, open, read, write, delete, and close files on the server</li>
+  <li>PHP can collect form data</li>
+  <li>PHP can send and receive cookies</li>
+  <li>PHP can add, delete, modify data in your database</li>
+  <li>PHP can be used to control user-access</li>
+  <li>PHP can encrypt data</li>
+</ul>
+<p>With PHP you are not limited to output HTML. You can output images, PDF 
+files, and even Flash movies. You can also output any text, such as XHTML and 
+XML.</p>
+<hr>
+
+<h2>Why PHP?</h2>
+<ul>
+  <li>PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+  <li>PHP is compatible with almost all servers used today (Apache, IIS, etc.)</li>
+  <li>PHP supports a wide range of databases</li>
+  <li>PHP is free.</li>
+  <li>PHP is easy to learn and runs efficiently on the server side</li>
+</ul>
+<br>
+
+</div>
+
+<div id="install" class="tabcontent">
+ 
+
+<h1>PHP 5 <span class="color_h1">Installation</span></h1>
+
+<hr>
+
+<h2>What Do I Need?</h2>
+  <p>To start using PHP, you can:</p>
+ <ul>
+  <li>Find a web host with PHP and MySQL support</li>
+  <li>Install a web server on your own PC, and then install PHP and MySQL</li>
+ </ul>
+<hr>
+
+<h2>Use a Web Host With PHP Support</h2>
+<p>If your server has activated support for PHP you do not 
+need to do anything.</p>
+<p>Just create some .php files, place them in your web directory, and the server 
+will automatically parse them for you.</p>
+<p>You do not need to compile anything or install any extra tools.</p>
+<p>Because PHP is free, most web hosts 
+offer PHP support.</p>
+<hr>
+
+<h2>Set Up PHP on Your Own PC</h2>
+<p>However, if your server does not support PHP, you must:</p>
+<ul>
+  <li>install a web server</li>
+  <li>install PHP</li>
+  <li>install a database, such as MySQL</li>
+</ul>
+<p>The official PHP website (PHP.net) has installation instructions for PHP:
+<a target="_blank" href="http://php.net/manual/en/install.php">http://php.net/manual/en/install.php</a></p>
+
+
+</div>
+</div>
+
+<div id="syntax" class="tabcontent">
+
+<h1>PHP 5 <span class="color_h1">Syntax</span></h1>
+
+<hr>
+<p class="intro">A PHP script is executed on the server, and the plain HTML result is sent back to the browser.</p>
+<hr>
+
+<h2>Basic PHP Syntax</h2>
+<p>A PHP script can be placed anywhere in the document.</p>
+<p>A PHP script starts with <b>&lt;?php</b> and ends with <b>?&gt;</b>:</p>
+
+<p>The default file extension for PHP files is ".php".</p>
+<p>A PHP file normally contains HTML tags, and some PHP scripting code.</p>
+<p>Below, we have an example of a simple PHP file, with a PHP script that uses a 
+built-in PHP function "echo" to output the text
+"Hello World!" on a web page:</p><br/>
+<img src="php images\syntax.png" width="1000px">
+
+<p><strong>Note:</strong> PHP statements end with a semicolon (;).</p>
+
+
+
+
+
+</div>
+
+
+
+
+<div id="var" class="tabcontent">
+
+<h1>PHP 5 <span class="color_h1">Variables</span></h1>
+
+<hr>
+<p class="intro">Variables are "containers" for storing information.</p>
+<hr>
+<h2>Creating (Declaring) PHP Variables</h2>
+<p>In PHP, a variable starts with the $ sign, followed by the name of the variable:</p>
+<br>
+<img src="php images\decvar.png" width="1000px">
+
+
+<p>After the execution of the statements above, the variable <b>$txt</b> will hold the value 
+<b>Hello world!</b>, the variable <strong>$x</strong> will hold the value <strong>5</strong>, 
+and the variable <strong>$y</strong> will hold the value <strong>10.5</strong>.</p>
+<p><b>Note:</b> When you assign a text value to a variable, put quotes around the value.</p>
+<p><strong>Note:</strong> Unlike other programming languages, PHP has no command 
+for declaring a variable. It is created the moment you first assign a value to 
+it.</p>
+
+<div class="w3-panel w3-note">
+<p>Think of variables as containers for storing data.</p>
+</div>
+
+<hr>
+
+<h2>PHP Variables</h2>
+<p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).</p>
+<p>Rules for PHP variables:</p>
+<ul>
+  <li>A variable starts with the $ sign, followed by the name of the variable</li>
+  <li>A variable name must start with a letter or the underscore character</li>
+  <li>A variable name cannot start with a number</li>
+  <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+  <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+</ul>
+
+<div class="w3-panel w3-note">
+<p>Remember that PHP variable names are case-sensitive!</p>
+</div>
+
+<hr>
+
+<h2>PHP is a Loosely Typed Language</h2>
+<p>In the example above, notice that we did not have to tell PHP which data type the variable is.</p>
+<p>PHP automatically converts the variable to the correct data type, depending on its value.</p>
+<p>In other languages such as C, C++, and Java, the programmer must declare the 
+name and type of the variable before using it.</p>
+<hr>
+
+<h2>PHP Variables Scope</h2>
+<p>In PHP, variables can be declared anywhere in the script.</p>
+<p>The scope of a variable is the part of the script where the variable can be referenced/used.</p>
+<p>PHP has three different variable scopes:</p>
+<ul>
+  <li>local</li>
+  <li>global</li>
+  <li>static</li>
+</ul>
+<hr>
+
+<h2>Global and Local Scope</h2>
+<p>A variable declared <b>outside</b> a function has a GLOBAL SCOPE and can only 
+be accessed outside a function:</p>
+
+<p>A variable declared <b>within</b> a function has a LOCAL SCOPE and can only 
+be accessed within that function:</p>
+
+<div class="w3-panel w3-note">
+<p>You can have local variables with the same name in different functions, 
+because local variables are only recognized by the function in which they are 
+declared.</p>
+</div>
+
+<hr>
+
+<h2>PHP The global Keyword</h2>
+<p>The global keyword is used to access a global variable from within a function.</p>
+<p>To do this, use the global keyword before the variables (inside the 
+function):</p>
+
+<br/>
+<img src="php images\global.png" width="1000px">
+
+
+
+<p>PHP also stores all global variables in an array called $GLOBALS[<i>index</i>]. 
+The <em>index</em> holds the name of the variable. This array is also accessible from 
+within functions and can be used to update global variables directly.</p>
+
+
+<hr>
+
+<h2>PHP The static Keyword</h2>
+<p>Normally, when a function is completed/executed, all of its variables are deleted. 
+However, sometimes we want a local variable NOT to be deleted. We need it for a 
+further job.</p>
+<p>To do this, use the <b>static</b> keyword when you first declare the 
+variable:</p>
+<br/>
+<img src="php images\static.png" width="1000px">
+
+
+
+
+<p>Then, each time the function is called, that variable will still have the 
+information it contained from the last time the function was called.</p>
+<p><b>Note:</b> The variable is still local to the function.</p>
+
+<br>
+</div>
+
+
+
+<div id="echo" class="tabcontent">
+
+<h1>PHP 5 <span class="color_h1">echo and print Statements</span></h1>
+
+<hr>
+<p class="intro">In PHP there are two basic ways to get output: echo and print.</p>
+<p class="intro">In this tutorial we use echo (and print) in almost every 
+example. So, this chapter contains a little more info about those two output 
+statements.</p>
+<hr>
+
+<h2>PHP echo and print Statements</h2>
+<p>echo and print are more or less the same. They are both used to output data 
+to the screen. </p>
+<p>The differences are small: echo has no return value while print has a return value of 1 so it can be used in 
+expressions. echo can take multiple parameters (although such usage is rare) 
+while print can take one argument. echo is marginally 
+faster than print.</p>
+<hr>
+
+<h2>The PHP echo Statement</h2>
+<p>The echo statement can be used with or without parentheses: 
+echo or echo().</p>
+<p><strong>Display Text</strong></p>
+<p>The following example shows how to output text with the echo 
+command (notice that the text can contain HTML markup):</p>
+<br/>
+<img src="php images\echo.png" width="1000px">
+<hr>
+<h2>The PHP print Statement</h2>
+<p>The print statement can be used with or without 
+parentheses: 
+print or print().</p>
+<p><strong>Display Text</strong></p>
+<p>The following example shows how to output text with the print 
+command (notice that the text can contain HTML markup):</p>
+<br/>
+<img src="php images\print.png" width="1000px">
+
+<br>
+
+</div>
+
+
+<div id="data" class="tabcontent">
+
+
+<h1>PHP 5 <span class="color_h1">Data Types</span></h1>
+
+<hr>
+<h2>PHP Data Types</h2>
+<p>Variables can store data of different types, and different data types can do 
+different things.</p>
+<p>PHP supports the following data types:</p>
+<ul>
+  <li>String</li>
+  <li>Integer</li>
+  <li>Float (floating point numbers - also called double)</li>
+  <li>Boolean</li>
+  <li>Array</li>
+  <li>Object</li>
+  <li>NULL</li>
+  <li>Resource</li>
+</ul>
+<hr>
+
+<h2>PHP String</h2>
+<p>A string is a sequence of characters, like "Hello world!".</p>
+<p>A string can be any text inside quotes. You can use single or double quotes:</p>
+<br/>
+<img src="php images\string.png" width="1000px">
+
+<h2>PHP Integer</h2>
+<p>An integer data type is a non-decimal number between -2,147,483,648 and 
+2,147,483,647.</p>
+<p>Rules for integers:</p>
+<ul>
+  <li>An integer must have at least one digit</li>
+  <li>An integer must not have a decimal point</li>
+  <li>An integer can be either positive or negative</li>
+  <li>Integers can be specified in three formats: decimal (10-based), hexadecimal (16-based - prefixed with 0x) or octal (8-based - prefixed with 0)</li>
+</ul>
+<p>In the following example $x is an integer. The PHP var_dump() 
+function returns the data type and value:</p>
+<br/>
+<img src="php images\int.png" width="1000px">
+
+
+<h2>PHP Float</h2>
+<p>A float (floating point number) is a number with a decimal point or a number in exponential form.</p>
+<p>In the following example $x is a float. The PHP var_dump() 
+function returns the data type and value:</p>
+<br/>
+<img src="php images\float.png" width="1000px">
+
+
+<h2>PHP Boolean</h2>
+<p>A Boolean represents two possible states: TRUE or FALSE.</p>
+<div class="w3-code htmlHigh w3-border notranslate">
+<div>
+ $x = true;<br>
+ $y = false;</div> </div>
+
+<hr>
+
+<h2>PHP Array</h2>
+<p>An array stores multiple values in one single variable.</p>
+<p>In the following example $cars is an array. The PHP var_dump() 
+function returns the data type and value:</p>
+<br/>
+<img src="php images\array.png" width="1000px">
+
+<h2>PHP Object</h2>
+<p>An object is a data type which stores data and information on how to process that data.</p>
+<p>In PHP, an object must be explicitly declared.</p>
+<p>First we must declare a class of object. For this, we use the class keyword. 
+A class is a structure that can contain properties and methods:</p>
+<br/>
+<img src="php images\array2.png" width="1000px">
+
+<h2>PHP NULL Value</h2>
+<p>Null is a special data type which can have only one value: NULL.</p>
+<p>A variable of data type NULL is a variable that has no value assigned to it.</p>
+<p><strong>Tip:</strong> If a variable is created without a value, it is 
+automatically assigned a value of NULL.</p>
+<p>Variables can also be emptied by setting the value to NULL:</p>
+<br/>
+<img src="php images\null.png" width="1000px">
+
+<h2>PHP Resource</h2>
+<p>The special resource type is not an actual data type. It is the storing of a 
+reference to functions and resources external to PHP.</p>
+<p>A common example of 
+using the resource data type is a database call.</p>
+<p>We will not talk about the resource type here, since it is an advanced topic.</p>
+
+<br>
+
+</div>
+
+
+<div id="string" class="tabcontent">
+
+
+<h1>PHP 5 <span class="color_h1">Strings</span></h1>
+
+<hr>
+<p class="intro">A string is a sequence of characters, like "Hello world!".</p>
+<hr>
+
+<h2>PHP String Functions</h2>
+
+<p>In this chapter we will look at some commonly used functions to manipulate strings.</p>
+<hr>
+
+<h2>Get The Length of a String</h2>
+<p>The PHP strlen() function returns the length of a string.</p>
+
+<hr>
+
+<h2>Count The Number of Words in a String</h2>
+<p>The PHP str_word_count() function counts the number of words in a string.
+
+<hr>
+
+<h2>Reverse a String</h2>
+<p>The PHP strrev() function reverses a string.</p>
+
+
+<hr>
+
+<h2>Search For a Specific Text Within a String</h2>
+<p>The PHP strpos() function searches for a specific text within a string.</p>
+<p>If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE.</p>
+<p>The example below searches for the text "world" in the string "Hello world!":</p>
+
+
+
+<p><strong>Tip:</strong>  
+The first character position in a string is 0 (not 1).</p>
+<hr>
+
+<h2>Replace Text Within a String</h2>
+<p>The PHP str_replace() function replaces some characters with some other 
+characters in a string.</p>
+
+
+
+</div>
+
+
+
+
+<div id="constant" class="tabcontent">
+
+
+<h1>PHP 5 <span class="color_h1">Constants</span></h1>
+
+<hr>
+<p class="intro">Constants are like variables except that once they are defined 
+they cannot be changed or undefined.</p>
+<hr>
+
+<h2>PHP Constants</h2>
+
+<p>A constant is an identifier (name) for a simple value. The value cannot be 
+changed during the script.</p>
+<p>A valid constant name starts with a letter or underscore (no $ sign before 
+the constant name).</p>
+<p><strong>Note:</strong> Unlike variables, constants are automatically global across 
+the entire script.</p>
+<hr>
+
+<h2>Create a PHP Constant</h2>
+<p>To create a constant, use the define() function.</p>
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+ define(<i>name</i>, <i>value</i>, <i>case-insensitive</i>)</div></div>
+
+<p>Parameters:</p>
+<ul>
+  <li><i>name</i>: Specifies the name of the constant</li>
+  <li><i>value</i>: Specifies the value of the constant</li>
+  <li><i>case-insensitive</i>: Specifies whether the constant name should be case-insensitive. Default is false</li>
+</ul>
+
+<p>The example below creates a constant with a <strong>case-sensitive</strong> name:</p>
+<br/>
+<img src="php images\constant.png" width="1000px">
+
+
+
+
+<hr>
+
+<h2>Constants are Global</h2>
+<p>Constants are automatically global and can be used across 
+the entire script.</p>
+<p>The example below uses a constant inside a function, even if it is defined 
+outside the function:</p>
+
+<br>
+<img src="php images\constantg.png" width="1000px">
+
+</div>
+
+
+
+<div id="operators" class="tabcontent">
+
+<h1>PHP 5 <span class="color_h1">Operators</span></h1>
+
+<hr>
+<h2>PHP Operators</h2>
+<p>Operators are used to perform operations on variables and values.</p>
+<p>PHP divides the operators in the following groups:</p>
+<ul>
+  <li>Arithmetic operators</li>
+  <li>Assignment operators</li>
+  <li>Comparison operators</li>
+  <li>Increment/Decrement operators</li>
+  <li>Logical operators</li>
+  <li>String operators</li>
+  <li>Array operators</li>
+</ul>
+<hr>
+
+<h2>PHP Arithmetic Operators</h2>
+<p>The PHP arithmetic operators are used with numeric values to perform common arithmetical operations, 
+such as addition, subtraction, multiplication etc.</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th >Operator</th>
+<th>Name</th>
+<th>Example</th>
+<th style="width:40%">Result</th>
+
+</tr>
+<tr>
+<td>+</td>
+<td>Addition</td>
+<td>$x + $y</td>
+<td>Sum of $x and $y</td>
+
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+<td>$x - $y</td>
+<td>Difference of $x and $y</td>
+
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td>$x * $y</td>
+<td>Product of $x and $y</td>
+
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+<td>$x / $y</td>
+<td>Quotient of $x and $y</td>
+
+</tr>
+<tr>
+<td>%</td>
+<td>Modulus</td>
+<td>$x % $y</td>
+<td>Remainder of $x divided by $y</td>
+
+</tr>
+<tr>
+<td>**</td>
+<td>Exponentiation</td>
+<td>$x ** $y</td>
+<td>Result of raising $x to the $y'th power (Introduced in PHP 5.6)</td>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP Assignment Operators</h2>
+<p>The PHP assignment operators are used with numeric values to write a value to a variable.</p>
+<p>The basic assignment operator in PHP is "=". It means that the left operand 
+gets set to the value of the assignment expression on the right.</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Assignment</th>
+<th style="width:20%">Same as... </th>
+<th style="width:55%">Description</th>
+
+</tr>
+<tr>
+<td>x = y</td>
+<td>x = y</td>
+<td>The left operand gets set to the value of the expression on the right</td>
+</tr>
+<tr>
+<td>x += y</td>
+<td>x = x + y</td>
+<td>Addition</td>
+
+</tr>
+<tr>
+<td>x -= y</td>
+<td>x = x - y</td>
+<td>Subtraction</td>
+
+</tr>
+<tr>
+<td>x *= y</td>
+<td>x = x * y</td>
+<td>Multiplication</td>
+</tr>
+
+<tr>
+<td>x /= y</td>
+<td>x = x / y</td>
+<td>Division</td>
+</tr>
+<tr>
+<td>x %= y</td>
+<td>x = x % y</td>
+<td>Modulus</td>
+
+</tr>
+</tbody></table>
+
+
+<hr>
+<h2>PHP Comparison Operators</h2>
+<p>The PHP comparison operators are used to compare two values (number or string):</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Operator</th>
+<th style="width:22%">Name</th>
+<th style="width:15%">Example</th>
+<th style="width:38%">Result</th>
+
+</tr>
+<tr>
+<td>==</td>
+<td>Equal</td>
+<td>$x == $y</td>
+<td>Returns true if $x is equal to $y</td>
+
+</tr>
+<tr>
+<td>===</td>
+<td>Identical</td>
+<td>$x === $y</td>
+<td>Returns true if $x is equal to $y, and they are of the same type</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal</td>
+<td>$x != $y</td>
+<td>Returns true if $x is not equal to $y</td>
+
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Not equal</td>
+<td>$x &lt;&gt; $y</td>
+<td>Returns true if $x is not equal to $y</td>
+
+</tr>
+<tr>
+<td>!==</td>
+<td>Not identical</td>
+<td>$x !== $y</td>
+<td>Returns true if $x is not equal to $y, or they are not of the same type</td>
+
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+<td>$x &gt; $y</td>
+<td>Returns true if $x is greater than $y</td>
+
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+<td>$x &lt; $y</td>
+<td>Returns true if $x is less than $y</td>
+
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Greater than or equal to</td>
+<td>$x &gt;= $y</td>
+<td>Returns true if $x is greater than or equal to $y</td>
+
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal to</td>
+<td>$x &lt;= $y</td>
+<td>Returns true if $x is less than or equal to $y</td>
+
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP Increment / Decrement Operators</h2>
+<p>The PHP increment operators are used to increment a variable's value.</p>
+<p>The PHP decrement operators are used to decrement a variable's value.</p>
+<table class="w3-table-all notranslate" id="table1">
+<tbody><tr>
+<th style="width:15%">Operator</th>
+<th style="width:20%">Name </th>
+<th style="width:55%">Description</th>
+</tr>
+<tr>
+<td>++$x</td>
+<td>Pre-increment</td>
+<td>Increments $x by one, then returns $x</td>
+
+</tr>
+<tr>
+<td>$x++</td>
+<td>Post-increment</td>
+<td>Returns $x, then increments $x by one</td>
+
+</tr>
+<tr>
+<td>--$x</td>
+<td>Pre-decrement</td>
+<td>Decrements $x by one, then returns $x</td>
+</tr>
+<tr>
+<td>$x--</td>
+<td>Post-decrement</td>
+<td>Returns $x, then decrements $x by one</td>
+
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP Logical Operators</h2>
+<p>The PHP logical operators are used to combine conditional statements.</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Operator</th>
+<th style="width:20%">Name</th>
+<th style="width:20%">Example</th>
+<th style="width:35%">Result</th>
+
+</tr>
+<tr>
+<td>and</td>
+<td>And</td>
+<td>$x and $y</td>
+<td>True if both $x and $y are true</td>
+
+</tr>
+<tr>
+<td>or</td>
+<td>Or</td>
+<td>$x or $y</td>
+<td>True if either $x or $y is true</td>
+
+</tr>
+<tr>
+<td>xor</td>
+<td>Xor</td>
+<td>$x xor $y</td>
+<td>True if either $x or $y is true, but not both</td>
+
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>And</td>
+<td>$x &amp;&amp; $y</td>
+<td>True if both $x and $y are true</td>
+</tr>
+<tr>
+<td>||</td>
+<td>Or</td>
+<td>$x || $y</td>
+<td>True if either $x or $y is true</td>
+
+</tr>
+<tr>
+<td>!</td>
+<td>Not</td>
+<td>!$x</td>
+<td>True if $x is not true</td>
+
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP String Operators</h2>
+<p>PHP has two operators that are specially designed for strings.</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:15%">Operator</th>
+<th style="width:25%">Name</th>
+<th style="width:25%">Example</th>
+<th style="width:25%">Result</th>
+</tr>
+<tr>
+<td>.</td>
+<td>Concatenation</td>
+<td>$txt1 . $txt2</td>
+<td>Concatenation of $txt1 and $txt2</td>
+
+</tr>
+<tr>
+<td>.=</td>
+<td>Concatenation assignment</td>
+<td>$txt1 .= $txt2</td>
+<td>Appends $txt2 to $txt1</td>
+
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP Array Operators</h2>
+<p>The PHP array operators are used to compare arrays.</p>
+<table class="w3-table-all notranslate" id="table2">
+<tbody><tr>
+<th style="width:15%">Operator</th>
+<th style="width:18%">Name</th>
+<th style="width:17%">Example</th>
+<th style="width:40%">Result</th>
+</tr>
+<tr>
+<td>+</td>
+<td>Union</td>
+<td>$x + $y</td>
+<td>Union of $x and $y</td>
+
+</tr>
+<tr>
+<td>==</td>
+<td>Equality</td>
+<td>$x == $y</td>
+<td>Returns true if $x and $y have the same key/value pairs</td>
+
+</tr>
+<tr>
+<td>===</td>
+<td>Identity</td>
+<td>$x === $y</td>
+<td>Returns true if $x and $y have the same key/value pairs in the same order and of the same types</td>
+
+</tr>
+<tr>
+<td>!=</td>
+<td>Inequality</td>
+<td>$x != $y</td>
+<td>Returns true if $x is not equal to $y</td>
+
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>Inequality</td>
+<td>$x &lt;&gt; $y</td>
+<td>Returns true if $x is not equal to $y</td>
+
+</tr>
+<tr>
+<td>!==</td>
+<td>Non-identity</td>
+<td>$x !== $y</td>
+<td>Returns true if $x is not identical to $y</td>
+</tr>
+</tbody></table>
+
+<br>
+
+</div>
+
+
+
+<div id="else" class="tabcontent">
+
+<h1>PHP 5 <span class="color_h1">if...else...elseif</span> Statements</h1>
+
+<hr>
+<p class="intro">Conditional statements are used to perform different actions based on different conditions.</p>
+<hr>
+
+<h2>PHP Conditional Statements</h2>
+<p>Very often when you write code, you want to perform different actions for 
+different conditions. You can use conditional statements in your code to do this.</p>
+<p>In PHP we have the following conditional statements:</p>
+<ul>
+  <li><b>if statement</b> - executes some code if one condition is true</li>
+  <li><b>if...else statement</b> - executes some code if a condition is true and another code if that condition is false</li>
+  <li><b>if...elseif....else statement</b>  - executes different codes for more than two conditions</li>
+  <li><b>switch statement</b> - selects one of many blocks of code to be executed</li>
+</ul>
+<hr>
+
+
+
+<h2>PHP - The if...else Statement</h2>
+<p>The if....else statement executes some code if a condition is true and 
+another code if that condition is false.</p>
+
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+if (<i>condition</i>)&nbsp;{<br>
+&nbsp;
+&nbsp;&nbsp;<i>code to be executed if condition is true;</i><br>
+ }
+else {<br>
+&nbsp;&nbsp;<i>&nbsp; code to be executed if condition is false;<br>
+ </i>}
+</div></div>
+<br/>
+<img src="php images\if.png" width="1000px">
+
+
+<p>The example below will output "Have a good day!" if the current time is less 
+than 20, and "Have a good night!" otherwise:</p>
+<br/>
+<img src="php images\ifelse.png" width="1000px">
+
+<hr>
+
+<h2>PHP - The if...elseif....else Statement</h2>
+<p>The if....elseif...else statement executes different codes for more than two 
+conditions.</p>
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+if (<i>condition</i>) {<br>
+&nbsp;
+&nbsp;&nbsp;<i>code to be executed if this condition is true;<br>
+ </i>}
+elseif (<i>condition</i>) {<br>
+&nbsp;&nbsp;<i>&nbsp; code to be executed if this condition is true;<br>
+ </i>} else {<br>
+&nbsp;
+&nbsp;&nbsp;<i>code to be executed if all conditions are false;<br>
+</i>}
+</div></div>
+
+<p>The example below will output "Have a good morning!" if the current time is less than 10,
+and "Have a good day!" if the current time is less than 20. Otherwise it will output "Have a good night!":</p><br/>
+<img src="php images\elseif.png" width="1000px">
+</div>
+
+
+
+<div id="switch" class="tabcontent">
+
+<h1>PHP 5 <span class="color_h1">switch</span> Statement</h1>
+
+<hr>
+<p class="intro">The switch statement is used to perform different actions based on different conditions.</p>
+<hr>
+
+<h2>The PHP switch Statement</h2>
+<p>Use the switch statement to <strong>select one of many blocks 
+of code to be executed</strong>.</p>
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+
+switch (<i>n</i>)
+{<br>
+&nbsp;&nbsp;&nbsp; case <i>label1:</i><br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; code to be executed if n=label1;</i><br>
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br>
+&nbsp;
+&nbsp;
+case <i>label2:</i><br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;&nbsp; &nbsp; code to be executed if n=label2;</i><br>
+&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;break;<br>
+&nbsp;
+&nbsp;
+case <i>label3:</i><br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;&nbsp; &nbsp; code to be executed if n=label3;</i><br>
+&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;&nbsp;break;<br>&nbsp; &nbsp; ...<br>
+&nbsp;&nbsp;&nbsp; default:<br>
+&nbsp;&nbsp;<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; code to be executed if n is different from all labels;</i><br>
+}
+
+</div></div>
+
+<p>This is how it works: First we have a single expression <i>n</i> (most often a
+variable), that is evaluated once. The value of the expression is then compared
+with the values for each case in the structure. If there is a match, the block
+of code associated with that case is executed. Use <b>break</b> to prevent the
+code from running into the next case automatically. The <strong>default</strong> statement is used if no 
+match is found.</p>
+
+<br>
+<img src="php images\switch.png" width="1000px">
+
+
+</div>
+
+
+<div id="while" class="tabcontent">
+
+<h1>PHP 5 <span class="color_h1">while</span>  Loops</h1>
+
+<hr>
+<p class="intro">PHP while loops execute a block of code while 
+the specified condition is true.</p>
+<hr>
+
+<h2>PHP Loops</h2>
+<p>Often when you write code, you want the same block of code to run over and 
+over again in a row. Instead of adding several almost equal code-lines in a script, we 
+can use loops to perform a task like this.</p>
+<p>In PHP, we have the following looping statements:</p>
+<ul>
+  <li><b>while </b>- loops through a block of code as long as the specified condition is true</li>
+  <li><b>do...while</b> - loops through a block of code once, and then repeats the loop 
+  as long as the specified condition is true</li>
+  <li><b>for </b>- loops through a block of code a specified number of times</li>
+  <li><b>foreach </b>- loops through a block of code for each element in an 
+  array</li>
+</ul>
+<hr>
+
+<h2>The PHP while Loop</h2>
+<p>The while loop executes a block of code as long as the specified condition is true.</p>
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+while (<i>condition is true</i>) {<br>
+<i>&nbsp;&nbsp;&nbsp; code to be executed</i>;<br>
+ }
+</div></div>
+
+<p>The example below first sets a variable $x to 1 ($x = 1). Then, the while loop will continue to run as long as $x is less than, or equal to 5 
+($x &lt;= 5). $x will increase by 1 each time 
+the loop runs ($x++):</p>
+<br>
+<img src="php images\while.png" width="1000px">
+
+<hr>
+
+<h2>The PHP do...while Loop</h2>
+<p>The do...while loop will always execute the block of code once, it 
+will then check the condition, and repeat the loop while the specified condition is true.</p>
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+do
+{<br>
+<i>&nbsp; &nbsp; code to be executed;<br>
+</i>}
+while (<i>condition is true</i>);
+</div></div>
+
+<p>The example below first sets a variable $x to 1 ($x = 1). Then, the do while 
+loop will write some output, and then increment the variable $x with 1. Then the condition is checked (is 
+$x less than, or equal to 5?), and the loop will continue to run as long as $x is less than, or equal to 5:</p>
+<br/>
+<img src="php images\dowhile.png" width="1000px">
+
+
+<p>Notice that in a do while loop the condition is tested AFTER executing 
+the statements within the loop. This means that the do while loop would execute 
+its statements at least once, even if the condition is false the first time.</p>
+<p>The example below sets the $x variable to 6, then it runs the loop, <strong>
+and then the condition is checked</strong>:</p>
+
+
+<p>The for loop and the foreach loop will be explained in the next chapter.</p>
+
+
+</div>
+
+
+<div id="for" class="tabcontent">
+
+<h1>PHP 5 <span class="color_h1">for</span> Loops</h1>
+
+<hr>
+<p class="intro">PHP for loops execute a block of code a specified number of times.</p>
+<hr>
+
+<h2>The PHP for Loop</h2>
+<p>The for loop is used when you know in advance how many times the script should run.</p>
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+for (<i>init counter; test counter; increment counter</i>)
+{<br>
+&nbsp;&nbsp;<i>&nbsp; code to be executed;</i><br>
+}
+</div></div>
+
+<p>Parameters:</p>
+<ul>
+  <li><i>init counter</i>: Initialize the loop counter value</li>
+  <li><i>test counter</i>: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.</li>
+  <li><i>increment counter</i>: Increases the loop counter value</li>
+</ul>
+
+<p>The example below displays the numbers from 0 to 10:</p>
+<br/>
+<img src="php images\for.png" width="1000px">
+
+<hr>
+
+<h2>The PHP foreach Loop</h2>
+<p>The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.</p>
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+foreach ($<i>array </i>as<i> </i>$<i>value</i>)
+{<br>
+&nbsp;
+&nbsp;&nbsp;<i>code to be executed;</i><br>
+ }
+</div></div>
+
+<p>For every loop iteration, the value of the 
+current array element is assigned to $value and the array pointer is moved by 
+one, until it reaches the last array element.</p>
+<p>The following example demonstrates a loop that will output the values of  the 
+given array ($colors):</p>
+<br/>
+<img src="php images\foreach.png" width="1000px">
+
+<br/>
+<p>You will learn more about arrays in a later chapter.</p>
+
+<br>
+
+</div>
+
+
+
+<div id="function" class="tabcontent">
+
+
+
+<h1>PHP 5 <span class="color_h1">Functions</span></h1>
+
+<hr>
+<p class="intro">The real power of PHP comes from its functions; it has more 
+than 1000 built-in functions.</p>
+<hr>
+
+<h2>PHP User Defined Functions</h2>
+<p>Besides the built-in PHP functions, we can create our own functions.</p>
+<p>A function is a block of statements that can be used repeatedly in a program.</p>
+<p>A function will not execute immediately when a page loads.</p>
+<p>A function will be executed by a call to the function.</p>
+<hr>
+
+<h2>Create a User Defined Function in PHP</h2>
+<p>A user defined function declaration starts with the word "function":</p>
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+ function <i>functionName</i>()
+ {<br>
+<i>&nbsp; &nbsp; code to be executed</i>;<br>
+ }
+</div></div>
+<p><strong>Note:</strong> A function name can start with a letter or underscore 
+(not a number).</p>
+<p><strong>Tip:</strong> Give the function a name that reflects what the 
+function does!</p>
+<div class="w3-panel w3-note">
+<p>Function names are NOT case-sensitive.</p>
+</div>
+
+<p>In the example below, we create a function named "writeMsg()". The opening 
+curly brace ( { ) indicates the beginning of the function code and the closing 
+curly brace ( } ) indicates the end of the function. The function outputs "Hello 
+world!". To call the function, just write its name:</p>
+<br/>
+<img src="php images\function.png" width="1000px">
+ 
+
+<hr>
+<h2>PHP Function Arguments</h2>
+<p>Information can be passed to functions through arguments. An argument is just 
+like a variable.</p>
+<p>Arguments are specified after the function name, inside the parentheses. You 
+can add as many arguments as you want, just separate them with a comma. </p>
+
+<p>The following example has a function with one argument ($fname). When the 
+familyName() function is called, we also pass along a name (e.g. Jani), and the 
+name is used inside the function, which outputs several different first names, 
+but an equal last name:</p>
+
+
+<p>The following example has a function with two arguments ($fname and $year):</p>
+<br/>
+<img src="php images\function2.png" width="1000px">
+
+
+
+</div>
+
+
+
+
+<div id="array" class="tabcontent">
+<h1>PHP 5 <span class="color_h1">Arrays</span></h1>
+
+<hr>
+<p class="intro">An array stores multiple values in one single variable:</p>
+
+<hr>
+
+<h2>What is an Array?</h2>
+<p>An array is a special variable, which can hold more than one value at a time.</p>
+<p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+
+<div class="w3-code w3-border notranslate"><div>
+$cars1 = "Volvo";<br>
+$cars2 = "BMW";<br>
+$cars3 = "Toyota";
+</div></div>
+
+<p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+<p>The solution is to create an array!</p>
+<p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+<hr>
+<h2>Create an Array in PHP</h2>
+<p>In PHP, the array() function is used to create an array:</p>
+<div class="w3-code w3-border notranslate"><div>
+ array();</div></div>
+
+<p>In PHP, there are three types of arrays:</p>
+<ul>
+  <li><b>Indexed arrays</b> - Arrays with a numeric index</li>
+  <li><b>Associative arrays</b> - Arrays with named keys</li>
+  <li><b>Multidimensional arrays</b> - Arrays containing one or more arrays</li>
+</ul>
+<hr>
+
+<hr>
+<h2>PHP Indexed Arrays</h2>
+<p>There are two ways to create indexed arrays:</p>
+<p>The index can be assigned automatically (index 
+always starts at 0), like this:</p>
+<div class="w3-code w3-border notranslate"><div>
+$cars = array("Volvo", "BMW", "Toyota");</div></div>
+
+<p>or the index can be assigned manually:</p>
+<div class="w3-code w3-border notranslate"><div>
+$cars[0] = "Volvo";<br>
+$cars[1] = "BMW";<br>
+$cars[2] = "Toyota";
+</div></div>
+
+
+
+<hr>
+
+<h2>Get The Length of an Array - The count() Function</h2>
+<p>The count() function is used to return the length (the number of elements) of 
+an array:</p>
+
+<hr>
+
+
+
+<h2>PHP Associative Arrays</h2>
+<p>Associative arrays are arrays that use named keys that you assign to them.</p>
+<p>There are two ways to create an associative array:&nbsp;</p>
+<div class="w3-code w3-border notranslate"><div>
+
+$age = array("Peter"=&gt;"35", "Ben"=&gt;"37", "Joe"=&gt;"43");</div></div>
+<p>or:</p>
+<div class="w3-code w3-border notranslate"><div>
+
+$age['Peter'] = "35";<br>
+$age['Ben'] = "37";<br>
+$age['Joe'] = "43"; 
+</div></div>
+<p>The named keys can then be used in a script:</p>
+
+<hr>
+
+
+
+
+
+</div>
+
+
+
+<div id="sort" class="tabcontent">
+
+<h1>PHP 5 <span class="color_h1">Sorting Arrays</span></h1>
+
+<hr>
+<p class="intro">The elements in an array can be sorted in alphabetical or numerical order, descending or ascending.</p>
+<hr>
+
+<h2>PHP - Sort Functions For Arrays</h2>
+<p>In this chapter, we will go through the following PHP array sort functions:</p>
+<ul>
+  <li>sort() - sort arrays in ascending order</li>
+  <li>rsort() - sort arrays in descending order</li>
+  <li>asort() - sort associative arrays in ascending order, according to the value</li>
+  <li>ksort() - sort associative arrays in ascending order, according to the key</li>
+  <li>arsort() - sort associative arrays in descending order, according to the value</li>
+  <li>krsort() - sort associative arrays in descending order, according to the key</li>
+</ul>
+<hr>
+
+<h2>Sort Array in Ascending Order - sort()</h2>
+<p>The following example sorts the elements of the $cars array in ascending alphabetical order:</p>
+<br/>
+
+
+<p>The following example sorts the elements of the $numbers array in ascending 
+numerical order:</p>
+<br/>
+
+<img src="php images\sort1.png" width="1000px">
+
+<hr>
+<h2>Sort Array in Descending Order - rsort()</h2>
+<p>The following example sorts the elements of the $cars array in descending alphabetical order:</p>
+
+<br/>
+
+<img src="php images\sort2.png" width="1000px">
+
+<hr>
+
+<h2>Sort Array (Ascending Order), According to Value - asort()</h2>
+<p>The following example sorts an associative array in ascending order, 
+according to the value:</p>
+<br/>
+
+<img src="php images\sort3.png" width="1000px">
+<hr>
+
+<h2>Sort Array (Ascending Order), According to Key - ksort()</h2>
+<p>The following example sorts an associative array in ascending order, 
+according to the key:</p>
+<br/>
+
+<img src="php images\sort4.png" width="1000px">
+<hr>
+
+<h2>Sort Array (Descending Order), According to Value - arsort()</h2>
+<p>The following example sorts an associative array in descending order, 
+according to the value:</p>
+<br/>
+
+<img src="php images\sort5.png" width="1000px">
+<hr>
+
+<h2>Sort Array (Descending Order), According to Key - krsort()</h2>
+<p>The following example sorts an associative array in descending order, 
+according to the key:</p>
+<br/>
+
+<img src="php images\sort6.png" width="1000px">
+
+
+</div>
+
+<div id="global" class="tabcontent">
+
+      
+<h1>PHP 5 <span class="color_h1">Global Variables</span> - Superglobals</h1>
+
+<hr>
+<p class="intro">Superglobals were introduced in PHP 4.1.0, and are built-in 
+variables that are always available in all scopes.</p>
+<hr>
+
+<h2>PHP Global Variables - Superglobals</h2>
+<p>Several predefined variables in PHP are "superglobals", which means that they 
+are always accessible, regardless of scope - and you can access them from any 
+function, class or file without having to do anything special.</p>
+<p>The PHP superglobal variables are:</p>
+<ul>
+  <li>$GLOBALS</li>
+  <li>$_SERVER</li>
+  <li>$_REQUEST</li>
+  <li>$_POST</li>
+  <li>$_GET</li>
+  <li>$_FILES</li>
+  <li>$_ENV</li>
+  <li>$_COOKIE</li>
+  <li>$_SESSION</li>
+</ul>
+<p>This chapter will explain some of the superglobals, and the rest will be 
+explained in later chapters. </p>
+<hr>
+
+<h2>PHP $GLOBALS</h2>
+<p>$GLOBALS is a PHP super global variable which is used to access global variables from anywhere in the PHP script (also from within 
+functions or methods). </p>
+<p>PHP stores all global variables in an array called $GLOBALS[<i>index</i>]. 
+The <em>index</em> holds the name of the variable.</p>
+<p>The example below shows how to use the super global variable $GLOBALS:</p>
+<br/>
+
+<img src="php images\globals.png" width="1000px">
+
+
+
+<p>In the example above, since z is a variable present within the $GLOBALS 
+array, it is also accessible from outside the function! </p>
+<hr>
+
+<h2>PHP $_SERVER</h2>
+<p>$_SERVER is a PHP super global variable which holds information about headers, 
+paths, and script locations. </p>
+<p>The example below shows how to use some of the elements in $_SERVER:</p>
+
+<br/>
+
+<img src="php images\server.png" width="1000px">
+
+<p>The following table lists the most important elements that can go inside $_SERVER:</p>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:35%">Element/Code</th>
+<th style="width:65%">Description</th>
+</tr>
+<tr>
+<td>$_SERVER['PHP_SELF']</td>
+<td>Returns the filename of the currently executing script</td>
+</tr>
+<tr>
+<td>$_SERVER['GATEWAY_INTERFACE']</td>
+<td>Returns the version of the Common Gateway Interface (CGI) the server is 
+using</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADDR']</td>
+<td>Returns the IP address of the host server</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_NAME']</td>
+<td>Returns the name of the host server (such as www.w3schools.com)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SOFTWARE']</td>
+<td>Returns the server identification string (such as Apache/2.2.24)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PROTOCOL']</td>
+<td>Returns the name and revision of the information protocol (such as HTTP/1.1)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_METHOD']</td>
+<td>Returns the request method used to access the page (such as POST)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_TIME']</td>
+<td>Returns the timestamp of the start of the request (such as 1377687496)</td>
+</tr>
+<tr>
+<td>$_SERVER['QUERY_STRING']</td>
+<td>Returns the query string if the page is accessed via a query string</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT']</td>
+<td>Returns the Accept header from the current request </td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT_CHARSET']</td>
+<td>Returns the Accept_Charset header from the current request (such as 
+utf-8,ISO-8859-1)</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_HOST']</td>
+<td>Returns the Host header from the current request </td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_REFERER']</td>
+<td>Returns the complete URL of the current page (not reliable because not all 
+user-agents support it)</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTPS']</td>
+<td>Is the script queried through a secure HTTP protocol</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_ADDR']</td>
+<td>Returns the IP address from where the user is viewing the current page</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_HOST']</td>
+<td>Returns the Host name from where the user is viewing the current page</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_PORT']</td>
+<td>Returns the port being used on the user's machine to communicate with the 
+web server</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_FILENAME']</td>
+<td>Returns the absolute pathname of the currently executing script</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADMIN']</td>
+<td>Returns the value given to the SERVER_ADMIN directive in the web server 
+configuration file (if your script runs on a virtual host, it will be the value 
+defined for that virtual host) (such as someone@w3schools.com)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PORT']</td>
+<td>Returns the port on the server machine being used by the web server for 
+communication (such as 80)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SIGNATURE']</td>
+<td>Returns the server version and virtual host name which are added to 
+server-generated pages</td>
+</tr>
+<tr>
+<td>$_SERVER['PATH_TRANSLATED']</td>
+<td>Returns the file system based path to the current script</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_NAME']</td>
+<td>Returns the path of the current script</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_URI']</td>
+<td>Returns the URI of the current page</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>PHP $_REQUEST</h2>
+<p>PHP $_REQUEST is used to collect data after submitting an HTML form.</p>
+<p>The example below shows a form with an input field and a submit button. When 
+a user submits the data by clicking on "Submit", the form data is sent to the 
+file specified in the action attribute of the &lt;form&gt; tag. In this example, we 
+point to this file itself for processing form data. If you wish to use another 
+PHP file to process form data, replace that with the filename of your 
+choice. Then, we can use the super global variable $_REQUEST to collect the 
+value of the input field:</p>
+<br/>
+
+<img src="php images\request.png" width="1000px">
+<hr>
+
+<h2>PHP $_POST</h2>
+<p>PHP $_POST is widely used to collect form data after submitting an HTML form 
+with method="post". 
+$_POST is also widely used to pass variables.</p>
+<p>The example below shows a form with an input field and a submit button. When 
+a user submits the data by clicking on "Submit", the form data is sent to the 
+file specified in the action attribute of the &lt;form&gt; tag. In this example, we 
+point to the file itself for processing form data. If you wish to use another 
+PHP file to process form data, replace that with the filename of your 
+choice. Then, we can use the super global variable $_POST to collect the 
+value of the input field:</p>
+<br/>
+
+<img src="php images\post.png" width="1000px">
+
+<hr>
+
+<h2>PHP $_GET</h2>
+<p>PHP $_GET can also be used to collect form data after submitting an HTML form 
+with method="get".</p>
+<p>$_GET can also collect data sent in the URL.</p>
+<p>Assume we have an HTML page that contains a hyperlink with parameters:</p>
+<div class="w3-code w3-border notranslate"><div>
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>
+&lt;a href="test_get.php?subject=PHP&amp;web=W3schools.com"&gt;Test $GET&lt;/a&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div></div>
+<p>When a user clicks on the link "Test $GET", the parameters "subject" and 
+"web" are sent to "test_get.php", and you can then access their values 
+in "test_get.php" with $_GET.</p>
+
+<br/>
+
+<img src="php images\get.png" width="1000px"> 
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
